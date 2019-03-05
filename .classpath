@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/test/java"/>
+	<classpathentry kind="lib" path="gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="lib" path="D:/Binance/tryTelegramBot/Libraries/hamcrest-core-2.1.jar"/>
+	<classpathentry kind="lib" path="D:/Binance/tryTelegramBot/Libraries/junit-4.13-beta-1.jar"/>
+	<classpathentry kind="lib" path="D:/Binance/tryTelegramBot/Libraries/telegrambots-4.1-jar-with-dependencies.jar" sourcepath="D:/Binance/tryTelegramBot/Libraries/telegrambots-4.1-jar-with-dependencies.jar"/>
+	<classpathentry kind="lib" path="D:/Binance/tryTelegramBot/Libraries/telegrambots-abilities-4.1-jar-with-dependencies.jar"/>
+	<classpathentry kind="lib" path="D:/Binance/tryTelegramBot/Libraries/telegrambots-chat-session-bot-4.1-jar-with-dependencies.jar"/>
+	<classpathentry kind="lib" path="D:/Binance/tryTelegramBot/Libraries/telegrambotsextensions-4.1-jar-with-dependencies.jar"/>
+	<classpathentry kind="lib" path="D:/Binance/tryTelegramBot/Libraries/telegrambots-meta-4.1-jar-with-dependencies.jar"/>
+	<classpathentry kind="lib" path="D:/Binance/tryTelegramBot/Libraries/telegrambots-spring-boot-starter-4.1-jar-with-dependencies.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
