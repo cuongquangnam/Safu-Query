@@ -34,6 +34,7 @@ import java.util.stream.Collectors;
 public class telgramBot extends TelegramLongPollingBot {
 	
 	long startTime;
+	// for the stages of the bot
 	private static final int START_ = 13;
 	private static final int DOMAINORADDRESS = 1;
 	private static final int DOMAIN = 2;
@@ -46,7 +47,6 @@ public class telgramBot extends TelegramLongPollingBot {
 	private static final int YOURADDRESS = 10;
 	private static final int HASHLINK = 11;
 	private static final int SENDPROOFS = 12;
-	//private static final 
 	static protected ConcurrentHashMap<Integer, Integer> hashMap = new ConcurrentHashMap<Integer, Integer>();
 	static protected ConcurrentHashMap<Integer,Boolean> firstTime = new ConcurrentHashMap<Integer,Boolean>();
 	@Override
@@ -54,7 +54,6 @@ public class telgramBot extends TelegramLongPollingBot {
         // TODO
     	JSONObject json = null;
     	SendMessage message;
-//    	Spam detector----------------------------------------
     	Message newMsg = update.getMessage();
     	int usrId = newMsg.getFrom().getId();
 //    	//private final ga bisa knp ya?
@@ -114,7 +113,7 @@ public class telgramBot extends TelegramLongPollingBot {
             	 a.add("Others");
             	 Boolean checkType = a.contains(newMsg.getText());
             	 if (!checkType) {
-            	  message = new SendMessage().setChatId(chatId).setText("Please inreplace the type of the website").setReplyMarkup(typeOfDomain());
+            	  message = new SendMessage().setChatId(chatId).setText("Please input the type of the website").setReplyMarkup(typeOfDomain());
             	  exe(message);}
             	 else {
             		 hashMap.put(usrId, SENDREMARKS);
